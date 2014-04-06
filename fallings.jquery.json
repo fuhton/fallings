@@ -1,0 +1,26 @@
+{
+        "name": "fallings",
+        "title": "Fallings.js",
+        "description": "A jQuery plugin for parallax.",
+        "keywords": [
+                "jquery",
+                "parallax"
+        ],
+        "version": "0.0.1",
+        "author": {
+                "name": "Nick Smith",
+                "url": "https://github.com/fuhton"
+        },
+        "licenses": [
+                {
+                        "type": "MIT"
+                }
+        ],
+        "bugs": "https://github.com/fuhton/fallings/lister",
+        "homepage": "http://fallings.iliketheideaof.us",
+        "docs": "https://github.com/fuhton/fallings#readme",
+        "download": "https://github.com/fuhton/fallings/archive/master.zip",
+        "dependencies": {
+                "jquery": ">=1.9"
+        }
+}

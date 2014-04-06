@@ -1,0 +1,158 @@
+@gray: #717B7D;
+@black: #040404;
+@dkdkblue: #003044;
+@dkblue: #004466;
+
+.wrapper
+{
+  width: 100%;
+  margin: 0 auto;
+  //min-width: 960px;
+  position: relative;
+}
+
+
+body
+{
+  height: 100%;
+  margin: 0;
+  color: @black;
+  font-family: 'Titillium Web',sans-serif;
+  //min-width: 960px;
+  h1, h2, h3, h4, h5, h6
+                        {
+                          position: relative;
+                        }
+  h1
+  {
+    font-size: 2.5em;
+  }
+  a
+  {
+    color: @dkblue;
+  }
+}
+
+.site-header
+{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  .site-info
+  {
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    h1
+    {
+      width: 100%;
+    }
+    h4
+    {
+      padding-top: 75px;
+    }
+    
+  }
+}
+.site-content
+{
+  position: relative;
+  width: 100%;
+
+  .primary-section
+  {
+    background: @dkdkblue;
+    min-height: 100%;
+    position: relative;
+    width: 100%;
+    max-height: 350px;
+    overflow: hidden;
+    .primary-image{
+      
+      background: @dkdkblue url(http://i.imgur.com/ijQuV.jpg) no-repeat ;
+                              background-position: 100%;
+                              background-size: 130%;
+                              width: 100%;
+                              min-height: 100%;
+                              position: relative !important;
+                              img
+                              {
+                                width: 100%;
+                                height: auto;
+                              }
+                             }
+    }
+    .primary-options
+    {
+      margin: 75px 0;
+      width: 100%;
+      h3
+      {
+        text-align: center;
+      }
+      .options      
+      {
+        margin: 0 auto;
+        text-align: center;
+        pre
+        {
+          display: inline-block;
+          text-align: left;
+        }
+        p
+        {
+          max-width: 400px;
+          font-family: monospace;
+          padding: 0;
+          margin: 0 auto;
+          text-align: left;
+          &.indent
+          {
+            text-indent: 20px;
+          }
+          &.explain
+          {
+            color: lighten(@dkblue, 5%);
+          }
+        }
+      }
+    }
+    .primary-call
+    {
+      position: relative;
+      overflow: hidden;
+      height: 100px;
+      width: 100%;
+      text-align: center;
+    }    
+  }
+
+  .closing-image
+  {
+    width: 100%;
+    background: @dkblue;
+    max-height: 350px;
+    min-height: 100%;
+    overflow: hidden;
+    position:relative;
+    bottom:0;
+    .footer-image{
+      background: @dkdkblue url(../img/mountains.jpg) no-repeat ;
+                                background-position: 100%;
+                                background-size: 150%;
+                                width: 100%;
+                                min-height: 100%;
+                                position: relative !important;
+                                img
+                                {
+                                  width: 100%;
+                                  height: auto;
+                                }
+                               }
+  }
+  .site-footer
+  {
+    width: 100%;
+    text-align: center;
+  }

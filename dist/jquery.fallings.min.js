@@ -1,0 +1,9 @@
+/*
+ *  Fallings.js - v0.0.1
+ *  A jQuery plugin for parallax.
+ *  http://fallings.iliketheideaof.us
+ *
+ *  Made by Nick Smith
+ *  Under MIT License
+ */
+!function(a,b,c){function d(b,c){var d=this;d.element=b,d.$element=a(d.element),d.options=a.extend({},defaults,c),d._defaults=defaults,d._name=e,d.init()}var e="fallings";defaults={velocity:0,initialPosition:0,bgParallax:!1,bgPercent:"0%",onClass:"fallings-visible",offClass:"fallings-invisible"},d.prototype={init:function(){var a=this;a.didScroll=!1,a.startPosition=a.$element.position().top,a.height=a.$element.outerHeight(!0),a.parent=jQuery(a.$element).parent(),a.setCss(),a.watchScroll()},setCss:function(){var a=this;a.$element.css({position:"absolute"}),a.changeHeight()},watchScroll:function(){var b=this;a(c).scroll(function(){b.didScroll=!0}),setInterval(function(){b.didScroll&&(b.didScroll=!1,b.changeHeight())},10)},changeHeight:function(){var c=this;c.$window=a(b),c.offsetTop=c.$element.offset().top,c.scrollTop=c.$window.scrollTop(),c.height=c.$window.height(),c.position=c.startPosition,c.offsetTop>=c.scrollTop+c.height||c.offsetTop<c.scrollTop?(c.$element.removeClass(c.options.onClass),c.$element.addClass(c.options.offClass),c.position=c.startPosition-c.scrollTop*c.options.velocity):(c.$element.removeClass(c.options.offClass),c.$element.addClass(c.options.onClass),c.position=c.startPosition-c.scrollTop*c.options.velocity),c.position=c.position+c.options.initialPosition,c.options.bgParallax===!0?c.changeBgPosition():c.$element.css({top:c.position})},changeBgPosition:function(){var a=this;a.$element.css("background-position",""),a.$element.css("background-position",a.options.bgPercent+" "+a.position+"px")}},a.fn.fallings=function(b){var c=this;return c.each(function(){a.data(c,"plugin_"+e)||a.data(c,"plugin_"+e,new d(c,b))})}}(jQuery,window,document);
