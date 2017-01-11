@@ -1,0 +1,14 @@
+{
+    "parser": "babel-eslint",
+    "plugins": [
+        "react"
+    ],
+        "env": {
+        "browser": true,
+        "jquery": true,
+        "node": true
+    },
+    "extends": "airbnb",
+    "rules": {
+    }
+}
