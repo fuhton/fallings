@@ -1,6 +1,6 @@
 /*!
  * 
- * jQuery Fallings - v0.5.0
+ * jQuery Fallings - v0.6.0
  * A simple parallax jquery plugin.
  * https://github.com/fuhton/fallings/
  * 
@@ -55,8 +55,6 @@
 
 	'use strict';
 	
-	// the semi-colon before function invocation is a safety net against concatenated
-	// scripts and/or other plugins which may not be closed properly.
 	(function ($, window, document) {
 	  // Create the defaults once
 	  var pluginName = 'fallings';

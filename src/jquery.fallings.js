@@ -1,5 +1,3 @@
-// the semi-colon before function invocation is a safety net against concatenated
-// scripts and/or other plugins which may not be closed properly.
 (($, window, document) => {
   // Create the defaults once
   const pluginName = 'fallings';
