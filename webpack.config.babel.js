@@ -40,7 +40,6 @@ module.exports = {
 	entry: {
 		'fallings': './src/jquery.fallings.js',
 		'fallings.min': './src/jquery.fallings.js',
-
 	},
 	output: {
 		path: path.join(__dirname, 'dist'),
